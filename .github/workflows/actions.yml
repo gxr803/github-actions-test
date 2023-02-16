@@ -13,7 +13,7 @@ jobs:
            echo $GITHUB_REPOSITORY
            echo $GITHUB_SHA
            echo $GITHUB_WORKSPACE
-           echo "${{github.token}}""
+           echo "${{github.token}}"
       - name: Git Checkout action
         uses: actions/checkout@v3.3.0
       - name: List files after Checkout
