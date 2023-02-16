@@ -4,14 +4,14 @@ on: [push]
 jobs:
   run-github-action:
      runs-on: 
-            ubuntu-latest
+        ubuntu-latest
      steps:
       - name: list files
         run: |
            pwd
            ls
       - name: Git Checkout action
-        run: actions/checkout@v1
+        uses: actions/checkout@v3.3.0
       - name: List files after Checkout
         run: | 
           pwd
