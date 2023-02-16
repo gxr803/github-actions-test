@@ -1,0 +1,30 @@
+name: shell commands
+
+on: [push]
+
+jobs: 
+    run-shell-commands:
+      runs-on: ubuntu:latest
+      steps:
+           - name: echo String
+             run: echo "Hello World"
+
+           - name:  multiline commands
+             run:  |
+               node -v
+               npm -v
+           - name: python commands
+             run: |
+                import platform
+                print
+                (platform.processor())
+             shell: python
+    run-window-commands:
+       runs-on: windos-latest
+       steps:
+         - name: window commands
+           run: pwd
+           shell: bash
+
+           
+        
