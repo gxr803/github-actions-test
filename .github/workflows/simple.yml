@@ -20,11 +20,8 @@ jobs:
                 (platform.processor())
              shell: python
     run-window-commands:
-       runs-on: windows-latest
-       needs: run-shell-commands
+       runs-on: windos-latest
        steps:
-         - name: Directory Powershell
-           run: Get-Location
          - name: window commands
            run: pwd
            shell: bash
