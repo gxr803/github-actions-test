@@ -20,7 +20,7 @@ jobs:
                 (platform.processor())
              shell: python
     run-window-commands:
-       runs-on: windos-latest
+       runs-on: windows-latest
        steps:
          - name: window commands
            run: pwd
