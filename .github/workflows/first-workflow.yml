@@ -1,0 +1,22 @@
+name: First Workflow
+
+on: workflow_dispatch
+
+jobs:
+   first-Job:
+     runs-on: ubuntu-latest
+     steps: 
+        - name: Print string
+          run:  echo "WJKK WJKF Ji !"
+        - name: multi line commands
+          run: |
+           pwd
+           ls -a
+        - name: Checkout action
+          uses: actions/checkout@v3
+        - name: List of files
+          run: |
+              pwd
+              ls -a
+        - name: Bye Greeting
+          run: echo "Good Day Bye !" 
