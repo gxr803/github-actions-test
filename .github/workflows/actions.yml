@@ -1,6 +1,6 @@
 name: Action Workflow
 on: 
-   push:
+   workflow_dispatch:
    pull_request:
        type: [open, closed, assigned, reopened]
 
