@@ -10,11 +10,11 @@ jobs:
          run: |
           pwd
           ls -a  
-  #     - name: Node JS install
-  #       uses: actions/setup-node@v3 
-  #       with:
-  #        node-version: 16
+       - name: Node JS install
+         uses: actions/setup-node@v3 
+         with:
+          node-version: 18
        - name: Install dependencies
-         run: npm install
+         run: npm ci
        - name: Run Tests  
          run: npm test
