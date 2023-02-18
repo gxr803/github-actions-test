@@ -2,7 +2,7 @@ name: Action Workflow
 on: 
    workflow_dispatch:
    pull_request:
-       type: [open, closed, assigned, reopened]
+       type: [opened, closed, assigned, reopened]
 
 jobs:
   run-github-action:
